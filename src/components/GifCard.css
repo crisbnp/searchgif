@@ -1,6 +1,4 @@
 .gallery_img {
-  grid-column: 1 / -1;
-  grid-row: 1 / -1;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -8,11 +6,9 @@
 }
 
 .gallery_card {
-  background-color: white;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 .gallery_card:hover {
-  opacity: 0.8;
-  transform: scale(1.01);
+  transform: scale(0.99);
 }
