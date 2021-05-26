@@ -15,17 +15,10 @@ function App() {
       .then(response => response.json())
       .then(results => {
         setGifs(results.data)
-        console.log(results.data)
-        console.log('url', url)
       })
   }
 
-  // useEffect(() => {
-  //  fetchData('friends')
-  // }, [])
-
   const onSearchSubmit = (term) => {
-    console.log('term' + term)
     fetchData(term)
   }
 

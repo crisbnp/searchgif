@@ -5,8 +5,6 @@ const SearchForm = ({onSubmit}) => {
 
   const [query, setQuery] = useState(null)
 
-
-
   const handleSubmit = (e) => {
     e.preventDefault()
     onSubmit(query)

@@ -6,9 +6,9 @@ const GifCard = ({gif}) => {
 
   return (
     <div className="gallery_card">
-      <a href={gifView}>
-        <img src={gif.images.fixed_height.url} alt={gif.title} className="gallery_img"/>
-      </a>
+        <a href={gifView}>
+          <img src={gif.images.fixed_height.url} alt={gif.title} className="gallery_img"/>
+        </a>
     </div>
   )
 }
