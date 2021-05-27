@@ -1,3 +1,24 @@
+# Search your favourite GIF
+
+- This project is bootstrapped with Creat React App.
+- It uses Giphy API (Search endpoint)
+- When user search for a Gif (query) in the search bar, user should see gifs related to query rendered on the page
+- The first 7 images it returns should visually look like this
+- When user clicks on a gif, user will be redirected to Giphy view url.
+
+Approach to doing this project:
+
+- Breaks the app to 3 components: SearchForm, GifList (for rendering GifCard) and GifCard (for each Gif)
+- Worked on functionality of the search bar and ensure it returns the correct data
+- Styling the page accordingly
+- Added integration tests to the app (React Testing Library/Jest)
+
+What I would have improved:
+
+- Added Typescript to project
+- Worked on styling: when user clicks gif, modal pops up
+- Worked on more functionality: when user clicks gif, there is an option on copying the gif on modal
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
