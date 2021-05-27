@@ -1,9 +1,11 @@
 # Search your favourite GIF
 
+Live link: https://searchgif-cn.netlify.app/
+
 - This project is bootstrapped with Creat React App.
 - It uses Giphy API (Search endpoint)
 - When user search for a Gif (query) in the search bar, user should see gifs related to query rendered on the page
-- The first 7 images it returns should visually look like this
+- The first 7 images it returns should visually look like this: [Mockup](mockup.png)
 - When user clicks on a gif, user will be redirected to Giphy view url.
 
 Approach to doing this project:
