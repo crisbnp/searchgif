@@ -6,15 +6,17 @@ import GifList from './components/GifList'
 function App() {
 
   const [gifs, setGifs] = useState([])
+  const [status, setStatus] = useState('idle');
   
   const fetchData = async (term) => {
-    let APIurl = "http://api.giphy.com/v1/gifs/search";
-    let APIKey = "g4PZMbDnfMsCegCjFQTZZCwhaH3q4RKE"
+    const APIurl = "http://api.giphy.com/v1/gifs/search";
+    const APIKey = "g4PZMbDnfMsCegCjFQTZZCwhaH3q4RKE"
     let url = APIurl + `?q=${term}&api_key=${APIKey}&limit=25`
     await fetch(url)
       .then(response => response.json())
       .then(results => {
         setGifs(results.data)
+        setStatus('resolved')
       })
   }
 
@@ -28,7 +30,9 @@ function App() {
         <h1>SearchGIF</h1>
       </header>
       <SearchForm onSubmit={onSearchSubmit}/>
-      <GifList gifs={gifs}/>
+      {status === 'loading' && <div>Loading</div>}
+      {status === 'resolved' && <GifList gifs={gifs}/>}
+      
     </div>
   );
 }
