@@ -17,7 +17,7 @@ function App() {
       .then(results => {
         setGifs(results.data)
         setStatus('resolved')
-      })
+      }).catch(err => console.log(err));
   }
 
   const onSearchSubmit = (term) => {
