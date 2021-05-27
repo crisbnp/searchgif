@@ -30,9 +30,9 @@ describe('Gif search form', () => {
     userEvent.click(submitButton);
 
     const numberOfImages = await screen.findAllByAltText(/desc:.*?/i);
-    expect(await numberOfImages).toHaveLength(25);
+    expect(await numberOfImages).toHaveLength(27);
 
-    expect(fetch).toHaveBeenCalledWith('http://api.giphy.com/v1/gifs/search?q=duggee&api_key=g4PZMbDnfMsCegCjFQTZZCwhaH3q4RKE&limit=25');
+    expect(fetch).toHaveBeenCalledWith('http://api.giphy.com/v1/gifs/search?q=duggee&api_key=g4PZMbDnfMsCegCjFQTZZCwhaH3q4RKE&limit=27');
     screen.debug(numberOfImages);
   })
 

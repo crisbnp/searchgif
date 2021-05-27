@@ -11,7 +11,7 @@ function App() {
   const fetchData = async (term) => {
     const APIurl = "http://api.giphy.com/v1/gifs/search";
     const APIKey = "g4PZMbDnfMsCegCjFQTZZCwhaH3q4RKE"
-    let url = APIurl + `?q=${term}&api_key=${APIKey}&limit=25`
+    let url = APIurl + `?q=${term}&api_key=${APIKey}&limit=27`
     await fetch(url)
       .then(response => response.json())
       .then(results => {

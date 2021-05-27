@@ -13,8 +13,10 @@ const SearchForm = ({onSubmit}) => {
   return (
     <form onSubmit={handleSubmit} role="search">
       <label htmlFor="search">Search your favourite GIF</label>
-      <input name="search" type="text" placeholder="Search GIF" value={query} onChange={(e) => {setQuery(e.target.value)}} id="search"/>
-      <button type="submit">Search</button>
+      <div>
+        <input name="search" type="text" placeholder="Find your favourite GIF 🔎" value={query} onChange={(e) => {setQuery(e.target.value)}} id="search"/> 
+        <button type="submit" className="search_btn">Search</button>
+      </div>
     </form>
   )
 }
